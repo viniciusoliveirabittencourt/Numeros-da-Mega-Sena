@@ -1,0 +1,129 @@
+.none {
+  display: none;
+}
+
+body,
+html,
+.root,
+.root > div,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url('https://i.imgur.com/ZDZi25c.png');
+  background-repeat: repeat;
+  background-size: 100px;
+  color: white;
+}
+
+.root > div,
+.root,
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.greeting {
+  text-align: start;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  background: linear-gradient(44.86deg, #74bf48 24.55%, #479b43 75.06%);
+  width: 100%;
+  top: 0;
+  margin: 0;
+}
+
+.greeting > img {
+  width: 70px;
+}
+
+.subtitle {
+  align-self: center;
+  max-width: 750px;
+  text-align: start;
+  font-size: large;
+  color: #00742e;
+  margin-left: 10px;
+}
+
+ul {
+  max-width: 750px;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #00ca51;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+
+form {
+  background-color: #00ca51;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form label {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+form input {
+  margin: 20px 0;
+  height: 30px;
+  width: 50%;
+  font-size: 20px;
+}
+
+form button {
+  width: 25%;
+  height: 35px;
+  border: none;
+  font-size: 20px;
+  background-color: #006e2c;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #004b1e;
+}
+
+@media (max-width: 590px) {
+  ul {
+    max-width: 300px;
+  }
+}
